@@ -1,9 +1,12 @@
-print("Enter '0' for exit.")
-	ch = input("Enter any character: ")
-	if ch == '0':
+char = raw_input('enter something')
+list = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+for item in list:
+	if(char==item):
+		ab=1
 		break
 	else:
-		if((ch>='a' and ch<='z') or (ch>='A' and ch<='Z')):
-			print(ch, "is an alphabet.\n")
-		else:
-			print(ch, "is not an alphabet.\n")
+		ab=0
+if(ab==1):
+	print '\nalphabet'
+else:
+	print '\nnot an alphabet'
